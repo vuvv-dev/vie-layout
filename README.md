@@ -17,7 +17,9 @@
 
 ```bash
 npm install vie-layout
+```
 or
+```bash
 yarn add vie-layout
 ``` 
 ## Usage
