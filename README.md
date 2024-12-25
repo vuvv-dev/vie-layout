@@ -19,12 +19,11 @@
 npm install vie-layout
 or
 yarn add vie-layout
-
-Usage
+``` 
+## Usage
 Here is a basic example of how to use vie-layout in your React application:
 
-jsx
-Copy code
+```bash
 import React from 'react';
 import { ThemeProvider, DashboardLayout } from '@vie/vie-layout';
 
@@ -40,27 +39,20 @@ const App = () => {
 };
 
 export default App;
-Available Layouts
-LandingPageLayout: Ideal for creating modern and responsive landing pages.
-DashboardLayout: Perfect for building dashboard-style web applications.
-EcommerceLayout: Optimized for creating e-commerce websites.
-AdminLayout: Designed for administrator panels with a focus on usability.
-Customization
-vie-layout supports theming via ThemeProvider. You can pass a theme prop ("light" or "dark") or customize styles further by providing your own theme configuration.
+```
 
-jsx
-Copy code
-<ThemeProvider theme="light">
-  <YourLayoutComponent />
-</ThemeProvider>
-Contributing
+## Available Layouts
+# LandingPageLayout: Ideal for creating modern and responsive landing pages.
+# DashboardLayout: Perfect for building dashboard-style web # applications.
+# EcommerceLayout: Optimized for creating e-commerce websites.
+# AdminLayout: Designed for administrator panels with a focus on usability.
+# Customization
+
+### Contributing
 Contributions are welcome! If you'd like to improve vie-layout, please feel free to submit issues or pull requests on GitHub.
 
-License
+### License
 This project is licensed under the MIT License. See the LICENSE file for details.
-
-Copy code
-
 
 
 
