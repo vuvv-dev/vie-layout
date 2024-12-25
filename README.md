@@ -42,11 +42,11 @@ export default App;
 ```
 
 ## Available Layouts
-# LandingPageLayout: Ideal for creating modern and responsive landing pages.
-# DashboardLayout: Perfect for building dashboard-style web # applications.
-# EcommerceLayout: Optimized for creating e-commerce websites.
-# AdminLayout: Designed for administrator panels with a focus on usability.
-# Customization
+- LandingPageLayout: Ideal for creating modern and responsive landing pages.
+- DashboardLayout: Perfect for building dashboard-style web # applications.
+- EcommerceLayout: Optimized for creating e-commerce websites.
+- AdminLayout: Designed for administrator panels with a focus on usability.
+- Customization UI
 
 ### Contributing
 Contributions are welcome! If you'd like to improve vie-layout, please feel free to submit issues or pull requests on GitHub.
