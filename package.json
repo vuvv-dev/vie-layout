@@ -1,6 +1,6 @@
 {
   "name": "vie-layout",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
@@ -14,7 +14,14 @@
     "lint": "eslint .",
     "dev": "vite"
   },
-  "keywords": ["layout", "react-layout", "vie-layout", "template", "react-template", "build-layout"],
+  "keywords": [
+    "layout",
+    "react-layout",
+    "vie-layout",
+    "template",
+    "react-template",
+    "build-layout"
+  ],
   "author": "vuvudev",
   "repository": {
     "type": "git",
