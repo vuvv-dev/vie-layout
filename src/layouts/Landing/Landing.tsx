@@ -2,14 +2,14 @@ import React from "react";
 import * as S from "./Landing.styles";
 import Header from "../../components/Header/Header";
 import Content from "../../components/Content/Content";
-import Section from "../../components/Section/Section";
-import { Col, Row } from "../../components/Grid/Grid";
 import Footer from "../../components/Footer/Footer";
 
 export type LandingProps = {
   content?: React.ReactNode;
   header?: boolean;
+  headerContent?: React.ReactNode;
   footer?: boolean;
+  footerContent?: React.ReactNode;
   leftSite?: boolean;
   rightSite?: boolean;
   centerSiteWidth?: number;
@@ -20,7 +20,9 @@ export type LandingProps = {
 
 export default function Landing({
   header = true,
+  headerContent,
   footer = true,
+  footerContent,
   content,
   leftSite = false,
   rightSite = false,
@@ -37,22 +39,10 @@ export default function Landing({
           width={"100%"}
           contentCenter
           height={"fit-content"}
-          contentContainerStyle={{
-            background: "blue",
-          }}
           contentWidth={centerSiteWidth}
           fixed
           children={
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                padding: "10px 80px",
-              }}
-            >
-              <div>Header</div>
-              <div>Nav</div>
-            </div>
+            headerContent
           }
         />
       )}
@@ -93,20 +83,8 @@ export default function Landing({
           height={50}
           contentCenter
           contentWidth={centerSiteWidth}
-          contentContainerStyle={{
-            background: "blue",
-          }}
           children={
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                padding: "10px 80px",
-              }}
-            >
-              <div>Footer</div>
-              <div>Nav</div>
-            </div>
+            footerContent
           }
         />
       )}

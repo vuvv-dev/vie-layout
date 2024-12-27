@@ -29,7 +29,6 @@ export const LandingLeft = styled.div<SiteProps>`
         : "50%"}
   );
   ${(props) => (props.fixed ? "position: fixed;" : "")}
-  background-color: red;
   @media (max-width: ${breakpoints.xl}) {
     width: 100%;
   }
@@ -41,7 +40,6 @@ export const LandingRight = styled.div<SiteProps>`
         ? `calc(50% - ${props.containerWidth / 2}px)`
         : "50%"}
   );
-  background-color: red;
 
   @media (max-width: ${breakpoints.xl}) {
     width: 100%;

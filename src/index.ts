@@ -15,3 +15,4 @@ export { Row, Col } from "./components/Grid/Grid";
 export type { RowProps, ColProps } from "./components/Grid/Grid";
 
 export { default as Landing } from "./layouts/Landing/Landing";
+export type { LandingProps } from "./layouts/Landing/Landing";
