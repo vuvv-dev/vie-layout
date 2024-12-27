@@ -5,9 +5,14 @@ type HeaderProps = {
   center: boolean;
   height?: number | string;
   width?: number | string | "fit-content" | "inherit";
+  fixed?: boolean;
 };
 
 export const Header = styled.div<HeaderProps>`
+  position: ${(props) => (props.fixed ? "fixed" : "relative")};
+  top: 0;
+  left: 0;
+  z-index: 199;
   display: flex;
   justify-content: ${(props) => (props.center ? "center" : "flex-start")};
   align-items: center;

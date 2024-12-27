@@ -15,7 +15,7 @@ export type SectionProps = {
 
 export default function Section({
   children,
-  width,
+  width = "100%",
   height,
   className,
   paddingX,

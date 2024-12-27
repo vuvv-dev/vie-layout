@@ -11,4 +11,7 @@ export type { SectionProps } from "./components/Section/Section";
 export { default as Content } from "./components/Content/Content";
 export type { ContentProps } from "./components/Content/Content";
 
-export { default as Grid } from "./components/Grid/Grid";
+export { Row, Col } from "./components/Grid/Grid";
+export type { RowProps, ColProps } from "./components/Grid/Grid";
+
+export { default as Landing } from "./layouts/Landing/Landing";

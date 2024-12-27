@@ -3,9 +3,11 @@ import * as S from "./Header.styles";
 
 export type HeaderProps = {
   children: React.ReactNode;
-  
+
   width?: number | string;
   height?: number | string | "fit-content" | "inherit";
+
+  fixed?: true | false;
 
   contentWidth?: number | string;
   contentHeight?: number | string | "fit-content" | "inherit";
@@ -21,6 +23,7 @@ export default function Header({
   children,
   width,
   height,
+  fixed,
   contentWidth,
   contentHeight,
   contentCenter,
@@ -37,6 +40,7 @@ export default function Header({
       id={id}
       width={width}
       height={height}
+      fixed={fixed}
     >
       <S.HeaderContainer
         style={contentContainerStyle}

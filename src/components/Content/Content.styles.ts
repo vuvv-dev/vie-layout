@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "../../styles/breakpoints";
 
 type ContentProps = {
   width?: number | string | "fit-content" | "inherit";
@@ -19,4 +20,22 @@ export const Content = styled.div<ContentProps>`
   justify-content: ${(props) => (props.center ? "center" : "flex-start")};
 
   background: ${(props) => props.background};
+
+  @media (max-width: ${breakpoints.xl}) {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  @media (max-width: ${breakpoints.lg}) {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  @media (max-width: ${breakpoints.md}) {
+    width: 100%;
+  }
+
+  @media (max-width: ${breakpoints.sm}) {
+    width: 100%;
+  }
 `;
