@@ -14,7 +14,7 @@
     "lint": "eslint .",
     "dev": "vite"
   },
-  "keywords": [],
+  "keywords": ["layout", "react-layout", "vie-layout", "template", "react-template", "build-layout"],
   "author": "vuvudev",
   "license": "MIT",
   "description": "",
