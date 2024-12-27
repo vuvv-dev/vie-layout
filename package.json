@@ -16,6 +16,14 @@
   },
   "keywords": ["layout", "react-layout", "vie-layout", "template", "react-template", "build-layout"],
   "author": "vuvudev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vuvudev/vie-layout.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vuvudev/vie-layout/issues"
+  },
+  "homepage": "https://github.com/vuvudev/vie-layout#readme",
   "license": "MIT",
   "description": "",
   "dependencies": {
