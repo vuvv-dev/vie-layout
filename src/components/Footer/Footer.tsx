@@ -4,8 +4,8 @@ import * as S from "./Footer.styles";
 export type FooterProps = {
   children: React.ReactNode;
 
-  width?: number | string;
-  height?: number | string;
+  width?: number | string | "fit-content" | "inherit";
+  height?: number | string | "fit-content" | "inherit";
 
   contentWidth?: number | string;
   contentHeight?: number | string | "fit-content" | "inherit";
@@ -28,8 +28,19 @@ export default function Footer({
   id,
 }: FooterProps) {
   return (
-    <S.Footer style={style} className={className} id={id}>
-      <S.FooterContent>{children}</S.FooterContent>
+    <S.Footer
+      style={style}
+      className={className}
+      id={id}
+      center={contentCenter!}
+    >
+      <S.FooterContent
+        style={contentContainerStyle}
+        width={contentWidth}
+        height={contentHeight}
+      >
+        {children}
+      </S.FooterContent>
     </S.Footer>
   );
 }

@@ -1,9 +1,11 @@
 // breakpoints.ts
 export const breakpoints = {
-  sm: "480px",  // Small devices
-  md: "768px",  // Medium devices
-  lg: "1024px", // Large devices
-  xl: "1280px", // Extra large screens
+  xs: "480px",
+  sm: "576px",
+  md: "768px",
+  lg: "992px",
+  xl: "1200px",
+  xxl: "1600px",
 };
 
 export type Breakpoints = typeof breakpoints;
